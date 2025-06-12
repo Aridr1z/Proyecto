@@ -1,0 +1,168 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; 
+  color: #333;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.checkbox-group label {
+  width: 45%;
+  font-size: 0.9rem;
+}
+
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+.left-section {
+  flex: 1;
+  background-color: #cedef3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  padding: 2rem;
+}
+
+
+.logo {
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 0.5rem; 
+}
+
+
+.logo img {
+  width: 100px;  
+  height: auto;
+  display: block;
+}
+
+
+
+.left-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+
+form {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-element label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-element input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-element input:focus {
+  border-color: #007bff; 
+}
+
+
+button[type="submit"] {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+.social-login {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.social-login span {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #eee;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #ccc;
+}
+
+
+.right-section {
+  flex: 1;
+  background-color: #cedef3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,33 @@
+Pseudo-clases 
+
+
+:hover
+El formato se aplica cuando el apuntador pasa por encima del enlace
+
+:link 
+Hace referecnia a un enlace que no esta visitado
+
+:visited
+Hace referencia al enlace que ya esta visitado 
+
+:focus
+El formato se aplica cuando es el elemento activo en la pagina
+
+:active
+El formato se aplica en el momento en el que el usuario activa el enlace, cuando lo presiona
+
+:disabled
+Para desabiliatar elementos en formulariow3
+
+:enabled
+Para habilitar elementos en formulario
+
+:checked
+Para casilla de verificacion , checkbox
+
+
+
+
+
+Tarea , Pseudo Elementos
+

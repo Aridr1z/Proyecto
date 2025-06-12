@@ -1,0 +1,79 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 0.5rem;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding-left: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    color: #007bff;
+  }
+
+  /* Asegura que todos los <li> estén centrados verticalmente */
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 0;
+}
+
+/* Empuja el bloque de login/register al extremo derecho */
+nav ul li.push-right {
+  margin-left: auto;
+}
+
+/* Ya tenías estos estilos para los botones: */
+nav ul li a[href*="Login"] {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  background: #fff;
+  color: #007bff;
+}
+nav ul li a[href*="Login"]:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+nav ul li a[href*="Register"] {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  background: #007bff;
+  color: #fff;
+}
+nav ul li a[href*="Register"]:hover {
+  opacity: 0.85;
+}

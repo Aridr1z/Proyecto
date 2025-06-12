@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RegistroProducto.css">
+
+    <title>Registro de Productos</title>
+</head>
+<body>
+    <h1>Registro Productos</h1>
+
+    <section>
+        <div>
+                <form method="POST" action="RegistroProducto.php" name="signin-form" >
+                    <div class="form-element">
+                        <label>Nombre</label>
+                        <input type="text" id="nombreCurso" name="nombreCurso" required />
+                    </div>
+                    
+                
+                    <div class="form-element">
+                        <label>Precio</label>
+                        <input type="number" id="precioCurso" name="precioCurso" required />
+                    </div>
+                
+                    <div class="form-element">
+                        <label>Fecha del Curso</label>
+                        <input type="date" id="fechaCurso" name="fechaCurso" required />
+                    </div>
+                
+                    <div class="form-element">
+                        <label>Tipo de Curso</label>
+                        <input type="text" id="tipoCurso" name="tipoCurso" required />
+                    </div>
+                
+                    <div class="form-element">
+                        <label>Descripción</label>
+                        <textarea id="desColumna" name="desColumna" required></textarea>
+                    </div>
+                
+                    <div class="form-element">
+                        <label>Imagen</label>
+                        <input type="text" id="imagenCurso" name="imagenCurso" required />
+                    </div>
+                    
+                
+                    <button type="submit" name="login" value="login">Registrar Producto</button>
+                </form>
+                
+        </div>
+    </section>
+</body>
+</html>
+
+<?php
+
+include "conexion.php";
+
+$nombreCurso = $_POST['nombreCurso'];
+$precioCurso = $_POST['precioCurso'];
+$fechaCurso = $_POST['fechaCurso'];
+$tipoCurso = $_POST['tipoCurso'];
+$desColumna = $_POST['desColumna'];
+$imagenCurso = $_POST['imagenCurso']; 
+
+$sql = "INSERT INTO productos (id, nombreCurso, precioCurso, fechaCurso, tipoCurso, desColumna, imagenCurso)
+        VALUES (0, '$nombreCurso', '$precioCurso', '$fechaCurso', '$tipoCurso', '$desColumna', '$imagenCurso')";
+
+if (mysqli_query($con, $sql)) {
+    echo "Producto agregado correctamente.";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($con);
+}
+
+mysqli_close($con);
+?>

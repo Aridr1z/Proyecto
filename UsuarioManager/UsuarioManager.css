@@ -1,0 +1,54 @@
+/* === Reset breve ======================================== */
+*{box-sizing:border-box;margin:0;padding:0}
+
+/* === Layout general ===================================== */
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:#f4f6f9;
+  color:#333;
+}
+
+/* contenedor principal (evita tocar el header) */
+.page{
+  padding:2rem;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* === Título ============================================= */
+h1{
+  text-align:center;
+  margin-bottom:1.5rem;
+}
+
+/* === Tabla ============================================== */
+.table-wrapper{
+  background:#fff;
+  border-radius:12px;
+  padding:1.5rem;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+  overflow-x:auto;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:.95rem;
+}
+
+thead{
+  background:#007bff;
+  color:#fff;
+}
+
+th,td{
+  padding:1rem;
+  border-bottom:1px solid #ddd;
+  text-align:left;
+}
+
+tr:nth-child(even) td{background:#fafafa}
+
+@media(max-width:700px){
+  th,td{padding:.65rem;font-size:.88rem}
+}

@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    padding: 0;
+    color: #333;
+}
+
+/*
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+*/
+
+.page{
+    /* quitamos el padding global arriba */
+    padding: 0 2rem 2rem;   /* top 0  |  laterales 2rem |  bottom 2rem */
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+.table-container {
+    overflow-x: auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem auto;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+  
+thead {
+    background-color: #007bff;
+    color: white;
+}
+  
+th, td {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+  
+tr:hover {
+    background-color: #f1f1f1;
+}
+  
+td:last-child {
+    word-break: break-word;
+    max-width: 200px;
+    font-size: 0.9rem;
+    color: #555;
+}
+  
+/* Botón Eliminar */
+.btn-eliminar {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-eliminar:hover {
+    background-color: #c0392b;
+}
+
+.btn-modificar {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.btn-modificar:hover {
+    background-color: #d68910;
+}
+  
+@media (max-width: 768px) {
+    th, td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+}
+
+
+

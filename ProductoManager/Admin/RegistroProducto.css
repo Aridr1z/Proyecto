@@ -1,0 +1,82 @@
+/* Reset básico ----------------------------------------------------------*/
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Segoe UI',Tahoma,Verdana,sans-serif;
+  background:#f0f2f5;
+  color:#333;
+}
+
+/* ------------- wrapper para el contenido de la página -----------------*/
+.page{
+  max-width:1200px;
+  margin:auto;
+  padding:2rem 1rem;
+}
+
+/* Título ---------------------------------------------------------------*/
+h1{
+  text-align:center;
+  margin-bottom:2rem;
+  font-size:2rem;
+  color:#2c3e50;
+}
+
+/* Contenedor del formulario -------------------------------------------*/
+section>div{
+  background:#fff;
+  padding:2rem;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,.1);
+  width:100%;
+  max-width:500px;
+  margin:auto;                 /* lo centra */
+}
+
+/* Campos del formulario -----------------------------------------------*/
+.form-element{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:1.2rem;
+}
+
+.form-element label{
+  margin-bottom:.5rem;
+  font-weight:600;
+  color:#34495e;
+}
+
+.form-element input,
+.form-element textarea{
+  padding:.7rem;
+  border:1px solid #ccc;
+  border-radius:8px;
+  font-size:1rem;
+  transition:border .3s;
+}
+
+.form-element input:focus,
+.form-element textarea:focus{
+  border-color:#007bff;
+  outline:none;
+}
+
+/* Botón ----------------------------------------------------------------*/
+button[type=submit]{
+  width:100%;
+  padding:.8rem;
+  background:#007bff;
+  color:#fff;
+  font-size:1rem;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  transition:background .3s;
+}
+button[type=submit]:hover{background:#0056b3}
+
+/* Responsive -----------------------------------------------------------*/
+@media(max-width:500px){
+  section>div{padding:1.5rem}
+  h1{font-size:1.5rem}
+}

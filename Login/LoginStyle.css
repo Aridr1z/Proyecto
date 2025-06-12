@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f0f9; 
+    color: #333;
+  }
+  
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  
+  .left-section {
+    flex: 1;
+    background-color: #cedef3; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10rem;
+    
+  }
+  
+  
+  .logo {
+    display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 0.5rem; 
+  }
+  
+  .logo img {
+    width: 100px;  
+    height: auto;
+    display: block;
+  }
+  
+  
+  .left-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .left-section p {
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .left-section a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .left-section a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    font-size: 0.95rem;
+  }
+  
+  .form-group input {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff; 
+  }
+  
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  
+  
+  button[type="submit"] {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .social-login {
+    text-align: center;
+  }
+  
+  .social-login span {
+    display: block;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #eee;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    background-color: #ccc;
+  }
+  
+  
+  .right-section {
+    flex: 2;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vw;
+  }
+  
+  .right-section img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .right-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    
+  }
+  
+  h2{
+    text-align: center;
+  }

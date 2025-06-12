@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 0.5rem;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0 2rem;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+
+  
+  .search-bar button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    color: black;
+    background-color: aqua;
+    text-decoration: underline;
+  }
+
+  nav a:link{
+    color: red;
+  }
+
+  nav a:visited{
+    color:green;
+
+  }
+
+  .text1 input:focus {
+
+    background-color: yellow;
+  }
+
+
+  nav a:active{
+    color:yellow;
+
+  }
+
+  .search-bar input:focus{
+    color: blue;
+    background-color: blue;
+  }
+
+
+  .botton1 input:enabled {
+    background-color: #e6ffe6;
+  }
+  
+  .botton2 input:disabled {
+    background-color: red;
+  }
+
+
+

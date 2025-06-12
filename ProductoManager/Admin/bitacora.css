@@ -1,0 +1,114 @@
+/* ─────────── Paleta y variables ────────── */
+:root {
+  --bg:           #f5f6fa;
+  --header-bg:    #2f70ff;       /* azul del encabezado */
+  --header-tx:    #ffffff;
+  --border:       #e0e0e0;
+  --radius:       14px;
+  --shadow:       0 4px 10px rgba(0,0,0,.05);
+
+  --insert-row:   #d4edda;       /* verde suave */
+  --insert-tx:    #155724;
+
+  --delete-row:   #f8d7da;       /* rojo suave */
+  --delete-tx:    #721c24;
+
+  --change-bg:    #fff4ce;       /* amarillo claro para celdas cambiadas */
+  --change-tx:    #856404;
+}
+
+/* ─────────── Reset muy breve ────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: #333;
+}
+
+/* ─────────── título ────────── */
+h1 {
+  text-align: center;
+  margin: 40px 0 30px;
+  color: #2f3640;
+  letter-spacing: .4px;
+}
+
+/* ─────────── tabla ────────── */
+table {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;                /* para respetar radius */
+}
+
+thead th {
+  background: var(--header-bg);
+  color: var(--header-tx);
+  font-weight: 600;
+  padding: 14px 18px;
+  text-align: center;
+}
+
+th, td {
+  padding: 14px 18px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  font-size: .95rem;
+}
+
+/* Ajustes de anchura mínima */
+td:first-child    { min-width: 60px;  }   /* ID */
+td:nth-child(2)   { min-width: 100px; }   /* Acción */
+td:nth-child(8),  /* Consulta */
+td:nth-child(9)   { max-width: 200px; }   /* Contra-consulta */
+td:nth-child(8),td:nth-child(9),
+td:nth-child(8) pre,
+td:nth-child(9) pre {
+  text-align: left;
+  font-family: monospace;
+  font-size: .85rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Hover */
+tbody tr:hover td {
+  background: #fafbff;
+}
+
+/* ─────────── filas de inserción / eliminación ────────── */
+.insertar-row td {
+  background: var(--insert-row);
+  color: var(--insert-tx);
+  font-weight: 500;
+}
+.eliminar-row td {
+  background: var(--delete-row);
+  color: var(--delete-tx);
+  font-weight: 500;
+}
+
+/* ─────────── celdas cambiadas ────────── */
+.cambio {
+  background: var(--change-bg) !important;
+  color: var(--change-tx)     !important;
+  font-weight: 700;
+}
+
+/* ─────────── responsive rápido ────────── */
+@media(max-width: 600px) {
+  table {
+    font-size: .85rem;
+  }
+  th, td {
+    padding: 10px;
+  }
+}
