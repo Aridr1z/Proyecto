@@ -111,6 +111,12 @@ SmartLearn es una plataforma web desarrollada en PHP que recomienda cursos perso
    - Contraseña: Aris
    - Permite registrar cursos desde el panel de administración.
 
+8. Estructuras y visualización:
+   - Todo lo relacionado con los grafos (recomendaciones por compras) está en la carpeta `Reco`.
+   - Las recomendaciones por intereses y la tabla hash están implementadas en la carpeta `RecoInt`.
+   - La carpeta `Grafos` contiene el código necesario para la visualización de grafos utilizando Graphviz.
+   - Los algoritmos implementados (BFS, MergeSort y QuickSort) también se encuentran dentro de las carpetas `Reco` y `RecoInt`, aplicados a los módulos de recomendación.
+
 ---
 
 ## Autor
