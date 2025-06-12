@@ -55,11 +55,61 @@ SmartLearn es una plataforma web desarrollada en PHP que recomienda cursos perso
 
 ## ¿Cómo utilizarlo?
 
-1. Clona el repositorio en tu servidor local.
-2. Configura la base de datos en `conexion.php`.
-3. Abre `index.php` desde tu navegador.
-4. Regístrate como usuario y selecciona tus intereses.
-5. Comienza a recibir recomendaciones personalizadas.
+1. Clona este repositorio en tu servidor local o carpeta de tu servidor Apache:
+
+   ```bash
+   git clone https://github.com/tuusuario/Proyecto.git
+   ```
+
+2. Importa la base de datos:
+
+   - Abre la terminal.
+   - Entra al directorio donde está el respaldo:
+
+     ```bash
+     cd Proyecto/base_datos
+     ```
+
+   - Restaura la base de datos ejecutando:
+
+     ```bash
+     mysql -u root -p proyecto < backup_smartlearn.sql
+     ```
+
+   - Si la base de datos no existe aún, primero créala así:
+
+     ```bash
+     mysql -u root -p -e "CREATE DATABASE proyecto"
+     mysql -u root -p proyecto < backup_smartlearn.sql
+     ```
+
+3. Configura la conexión a la base de datos en el archivo:
+
+   
+   includes/conexion.php
+   
+
+   Asegúrate de que el usuario, contraseña y nombre de la base de datos coincidan.
+
+   - Nota: Algunas carpetas del proyecto (como Reco, RecoInt, etc.) también contienen sus propios archivos que incluyen la conexión a la base de datos. Asegúrate de revisar y actualizar las credenciales de conexión en cada uno de esos archivos si es necesario.
+
+4. Inicia el servidor local (XAMPP, MAMP o Apache), y abre en tu navegador:
+
+
+   http://localhost/Proyecto/LandingPage/LandingPage.php
+   
+
+5. Regístrate como nuevo usuario, selecciona al menos 5 intereses y comienza a recibir recomendaciones personalizadas.
+
+6. Desde el panel podrás:
+   - Ver recomendaciones por intereses.
+   - Realizar compras y ver recomendaciones basadas en comportamiento.
+   - Cambiar el orden de visualización (precio o fecha).
+
+7. Acceso como administrador:
+   - Correo: admin@gmail.com
+   - Contraseña: Aris
+   - Permite registrar cursos desde el panel de administración.
 
 ---
 
